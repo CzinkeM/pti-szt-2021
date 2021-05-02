@@ -54,4 +54,10 @@ public class CalculatorTest {
     assertEquals(0, calculator.divide(0, 5), "Devide with zero should be throw an Exception");
     assertThrows(IllegalArgumentException.class, () -> calculator.divide(5, 0));
   }
+
+  @Test
+  @DisplayName("Simple power should work")
+  public void testPower() {
+    assertEquals(4,calculator.power(2,2),"Regular power should work");
+  }
 }
